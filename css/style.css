@@ -388,6 +388,17 @@ left: 0;
     border: none;
     fill: #F4F4FD;
 }
+
+.policy-link{
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.04em;
+    text-decoration: none;
+    text-decoration-line: underline;
+    color: #4D5AE5;
+    padding-left: 4px;
+   }
+
 .btn-send{
     min-width: 169px;
     height: 56px;
