@@ -381,7 +381,7 @@ left: 0;
     align-items: center;
     justify-content: center;
     fill: transparent;
-}
+    }
 
 .input-check:checked + .check-text span{
     background-color: var(--active-color);
@@ -402,6 +402,7 @@ left: 0;
     border-radius: 4px;   
     display: block;
     margin: 0 auto;
+    margin-top: 24px;
     align-items: center;
     justify-content: center;
     transition-property: cursor;
