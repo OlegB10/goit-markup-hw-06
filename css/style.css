@@ -342,6 +342,9 @@ left: 0;
     padding: 8px 16px;
     resize: none;
     outline: transparent;
+    transition-property: border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
 
 .modal-note:focus{
@@ -366,7 +369,7 @@ left: 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    }
+        }
 
 .check-text span{
     width: 16px;
@@ -401,6 +404,9 @@ left: 0;
     margin: 0 auto;
     align-items: center;
     justify-content: center;
+    transition-property: cursor;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         }
 
 .btn-send:is(:hover, :focus) {
@@ -411,6 +417,8 @@ left: 0;
 .values {
     padding-top: 120px;
     padding-bottom: 120px;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 /* .values-title {} */
@@ -457,6 +465,8 @@ align-items: center;
 .doing {
     padding-top: 120px;
     padding-bottom: 120px;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 .doing-title {
@@ -481,6 +491,8 @@ align-items: center;
     background: #F4F4FD;
     padding-top: 120px;
     padding-bottom: 120px;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 .team-title {
@@ -567,6 +579,8 @@ align-items: center;
     padding-top: 130px;
     padding-bottom: 120px;
     background: #fff;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .customers-title {
@@ -615,10 +629,15 @@ align-items: center;
     background-color: #2E2F42;
     padding-top: 100px;
     padding-bottom: 100px;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
-.footer-item {
-display: flex;
+.footer-container {
+    display: flex;
+}
+.footer-logo {
+margin-right: 120px;
 }
 
 .footer-list {
@@ -649,6 +668,10 @@ display: flex;
     color: #E7E9FC; 
     max-width: 264px;
     margin-top: 16px;
+}
+
+.footer-social {
+display: block;
 }
 .footer-subtitle {
     font-weight: 500;
@@ -690,6 +713,74 @@ display: flex;
 .footer-soc-link:is(:hover, :focus) {
   background-color:rgba(49, 208, 170, 1); 
 }
+
+.footer-subscribe{
+   margin-left: 80px;
+    }
+
+.subscribe-title{
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+}
+
+.subscribe-form{
+    display: flex;
+    }
+
+.subscribe-input{
+    display: flex;
+    width: 264px;
+    height: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    background-color: transparent;
+    font-size: 12px;
+    line-height: 2;
+    align-items: center;
+    letter-spacing: 0.04em;
+    color: rgba(255, 255, 255, 0.6);
+    /* outline: transparent; */
+    padding: 8px 16px;
+    margin-right: 24px;
+   }
+
+/* .subscribe-input:focus{
+   outline: none;
+} */
+
+.btn-subscribe{
+    min-width: 165px;
+    height: 40px;
+    background: var(--accent-color);
+    border: none;
+    border-radius: 4px;
+    display: flex;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    justify-content: center;
+    align-items: center;
+    padding-left: 24px;
+    gap: 16px;
+    transition-property: cursor, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      }
+
+.btn-subscribe:is(:hover, :focus) {
+    cursor: pointer;
+    background-color: var(--active-color);
+   
+}
+
+.subscribe-icon{
+  margin-right: auto;
+  fill: #FFFFFF;
+   }
 
 /* ----------------------------- PORTFOLIO -----------------------------*/
 
