@@ -378,6 +378,80 @@
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
+        <p class="modal-title">Leave your contacts and we will call you back</p>
+        <form class="modal-form">
+          <div class="modal-field">
+            <label class="input-text" for="user-name">Name</label>
+            <div class="input-wrap">
+              <input
+                type="text"
+                name="user-name"
+                id="user-name"
+                class="modal-input"
+                placeholder="Name input "
+                required
+              />
+              <svg class="modal-icon" width="12" height="12">
+                <use href="./images/icons.svg#icon-person-name"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-field">
+            <label class="input-text" for="user-tel">Phone</label>
+            <div class="input-wrap">
+              <input
+                type="tel"
+                name="user-tel"
+                id="user-tel"
+                class="modal-input"
+                placeholder="Phone input"
+                required
+              />
+              <svg class="modal-icon" width="13" height="13">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-field">
+            <label class="input-text" for="user-email">Email</label>
+            <div class="input-wrap">
+              <input type="email" name="user-email" id="user-email"
+              class="modal-input" placeholder="Email input" required/ >
+              <svg class="modal-icon" width="15" height="12">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-field">
+            <label class="input-text" for="user-text">Comment</label>
+            <textarea
+              name="user-text"
+              class="modal-note"
+              placeholder="Text input"
+              id="user-text"
+            ></textarea>
+          </div>
+          <div class="modal-field">
+            <input
+              class="input-check visually-hidden"
+              type="checkbox"
+              name="user-confirm"
+              class="terms-confirm"
+              value="true"
+              id="user-confirm"
+            />
+            <label class="check-text" for="user-confirm">
+              <span>
+                <svg class="check-icon" width="10" height="82">
+                  <use href="./images/icons.svg#icon-vector"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the Privacy Policy</label
+            >
+          </div>
+
+          <button type="submit" class="btn-send">Send</button>
+        </form>
       </div>
     </div>
 
